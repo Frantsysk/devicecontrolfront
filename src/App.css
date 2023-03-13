@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  width: 90%;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px 0;
+  border-bottom: 1px solid #555;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 2.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  color: #aaa;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #555;
+}
+
+.device {
+  border: 1px solid #555;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.device h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.info {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.value {
+  flex: 1;
+}
+
+.device:nth-child(odd) {
+  background-color: #444;
 }
